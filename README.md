@@ -4,7 +4,7 @@
 
 **Challenge:** Create Health Monitoring Software for Astronauts on Space Missions
 
-**Team Name:** Team AUREON · **Team Leader:** Aditya Biswas Joy
+**Team Name:** Team AUREON  **Team Leader:** Aditya Biswas Joy
 
 ---
 
