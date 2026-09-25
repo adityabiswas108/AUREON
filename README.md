@@ -11,7 +11,8 @@
 
 ## Overview
 
-AUREON is a prototype astronaut health monitoring and decision-support system designed to help astronauts monitor changes in health indicators during long-duration space missions. The system follows a **Monitor → Understand → Act** workflow:
+AUREON is a web-based prototype for astronaut health monitoring and decision support during long-duration space missions.
+The concept follows a simple process: Monitor → Understand → Act
 
 - **Monitor** — collect health indicators (heart rate, SpO₂, temperature, sleep, activity)
 - **Understand** — compare values against a personal baseline, visualize trends, identify deviations
@@ -110,7 +111,7 @@ npm run preview
 ```
 src/
   components/    # Reusable UI (Layout, IndicatorCard, badges)
-  pages/         # Page-level views (Dashboard, Trends, Analysis, Actions, Nasa)
+  pages/         # Page-level views (Dashboard, Trends, Analysis, Actions, NASA)
   data/          # Simulated health data, baselines, NASA resources
   utils/         # Analysis logic, status helpers
   types/         # TypeScript types and interfaces
@@ -122,15 +123,29 @@ src/
 
 ## Future Improvements
 
-- Integration with verified NASA OSDR datasets when compatible data are available
-- Real-time telemetry ingestion from astronaut wearable sensors
-- Expanded indicator set (radiation exposure, bone density, fluid shifts)
-- Multi-crew comparative monitoring
-- Offline-capable PWA for spacecraft network constraints
-- Mission medical protocol integration
+Integration with verified and compatible NASA OSDR datasets
+Validated health-data pipelines
+Real-time telemetry ingestion from approved astronaut wearable systems
+Expanded health indicators
+Radiation exposure monitoring
+Bone-health indicators
+Fluid-shift monitoring
+Multi-crew monitoring
+Offline-capable PWA functionality for constrained spacecraft networks
+Secure data handling and authentication
+Integration with mission medical protocols
+More advanced statistical or machine-learning methods for anomaly detection
 
----
+Future functionality would require appropriate validation and mission-specific approval before operational use.
+
+## Team AUREON
+Team Name: Team AUREON
+Team Leader: Aditya Biswas Joy
+The project was developed collaboratively for the NASA Space Apps Challenge 2026.
 
 ## License / Attribution
 
-Built for the NASA Space Apps Challenge 2026. NASA resource links point to official public NASA websites. All simulated data is clearly labeled. No fabricated NASA data is presented.
+AUREON was developed for the NASA Space Apps Challenge 2026.
+NASA resource links included in this project point to official public NASA websites.
+All health measurements shown in the current prototype are clearly identified as simulated demonstration data.
+The project does not claim simulated measurements to be real NASA astronaut data. See the repository's LICENSE file for the applicable project licensing terms.
