@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-deep: #060a13;
+    --bg-panel: #0b1220;
+    --bg-panel-2: #0f1828;
+    --border-subtle: #1a2740;
+    --border-strong: #243352;
+    --text-primary: #e6edf7;
+    --text-secondary: #8b9bb8;
+    --text-muted: #5a6b8a;
+    --accent-cyan: #38d9d9;
+    --accent-blue: #4d8eff;
+    --accent-teal: #2dd4bf;
+    --status-normal: #34d399;
+    --status-moderate: #fbbf24;
+    --status-high: #f87171;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--bg-deep);
+    color: var(--text-primary);
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -10%, rgba(56, 217, 217, 0.06), transparent),
+      radial-gradient(ellipse 60% 40% at 100% 100%, rgba(77, 142, 255, 0.04), transparent);
+    background-attachment: fixed;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+  }
+}
+
+@layer components {
+  .panel {
+    background: linear-gradient(180deg, rgba(15, 24, 40, 0.7), rgba(11, 18, 32, 0.7));
+    border: 1px solid var(--border-subtle);
+    border-radius: 14px;
+    backdrop-filter: blur(8px);
+  }
+
+  .panel-hover {
+    transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .panel-hover:hover {
+    border-color: var(--border-strong);
+    box-shadow: 0 0 0 1px rgba(56, 217, 217, 0.08), 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
+
+  .tech-label {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  .glow-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse-slow 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  @keyframes pulse-slow {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.4s ease-out;
+  }
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-spin-fast {
+    animation: spin 0.8s linear infinite;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-deep);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+.recharts-tooltip-wrapper {
+  outline: none !important;
+}
+.recharts-default-tooltip {
+  background: rgba(11, 18, 32, 0.95) !important;
+  border: 1px solid var(--border-strong) !important;
+  border-radius: 8px !important;
+}
