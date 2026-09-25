@@ -145,7 +145,7 @@ Future functionality would require appropriate validation and mission-specific a
 
 ## License / Attribution
 
-1.**AUREON was developed for the NASA Space Apps Challenge 2026**
-2.**NASA resource links included in this project point to official public NASA websites**
-3.**All health measurements shown in the current prototype are clearly identified as simulated demonstration data**
-4.**The project does not claim simulated measurements to be real NASA astronaut data. See the repository's LICENSE file for the applicable project licensing terms**
+1. **AUREON was developed for the NASA Space Apps Challenge 2026**
+2. **NASA resource links included in this project point to official public NASA websites**
+3. **All health measurements shown in the current prototype are clearly identified as simulated demonstration data**
+4. **The project does not claim simulated measurements to be real NASA astronaut data. See the repository's LICENSE file for the applicable project licensing terms**
