@@ -6,7 +6,7 @@
 
 **Team Name:** Team AUREON  
 **Team Leader:** Aditya Biswas Joy
-
+**Live Demo:** https://aureon-astronaut-hea-y2ms.bolt.host/
 ---
 
 ## Overview
@@ -42,7 +42,7 @@ AUREON provides a prototype interface for:
 
 1. **Mission Dashboard** — health indicator cards, overall monitoring status, detected factors, mission overview
 2. **Health Trends** — interactive 7-day charts for heart rate, SpO₂, sleep, and activity with personal baseline reference lines
-3. **AI-Assisted Prototype Analysis** — browser-side baseline-deviation logic with live input validation, monitoring status (NORMAL / MODERATE ATTENTION / HIGH ATTENTION), detected factors, explanation, and suggested actions
+3. **Health Analysis** — browser-side baseline-deviation logic with live input validation, monitoring status (NORMAL / MODERATE ATTENTION / HIGH ATTENTION), detected factors, explanation, and suggested actions
 4. **Health Action Center** — rest & recovery, activity, continuous monitoring, and mission protocol guidance
 5. **NASA Data & Science** — official NASA resource links, data provenance, challenge context, project architecture, and about/team info
 
